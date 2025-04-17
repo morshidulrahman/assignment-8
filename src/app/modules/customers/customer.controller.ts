@@ -35,12 +35,12 @@ const getSingleCustomersHandler = CatchAsync(async (req, res) => {
 
 const deleteCustomersHandler = CatchAsync(async (req, res) => {
   const { id } = req.params;
-  const result = await CustomerService.deleteSingleCustomer(id);
+  await CustomerService.deleteSingleCustomer(id);
   SendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: "Customer deleted successfully",
-    data: result,
+    data: "",
   });
 });
 
