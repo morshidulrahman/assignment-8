@@ -1,35 +1,68 @@
-# Cars Server
+# 🚲 Bike Servicing Management Server
 
-# https://assingment-4-ten.vercel.app
+# https://assignment-8-tau-tawny.vercel.app
  
 #To Run Local
 
 ```bash
 # Clone this project
-$ git clone  https://github.com/morshidulrahman/carassingment-4-backend.git
+$ git clone  https://github.com/morshidulrahman/assignment-8.git
 
 # Access
-$ cd carassingment-4-backend
+$ cd BikeServiceAssignment-8-backend
 
 # Install dependencies
-$ npm i
+$ bun i
 
 # Run the project
-$ npm run start:dev
+$ bun dev
 
-# The server will initialize in the <http://localhost:5000>
+# The server will initialize in the <http://localhost:3000>
 ```
 
-# Project Description
+# 🚲 Bike Servicing Management System - Backend API
 
-- This API project is designed to eccomerce cars, enabling the following features
+This is a RESTful backend API for managing bike servicing operations. It allows servicing centers to manage customers, their bikes, and service records. The API supports full CRUD operations and includes custom endpoints for assigning and completing servicing jobs.
 
-- You have to use npm run this project
+---
 
-- Add, retrieve, update, and delete blogs.
+## 📌 Features
 
-- Manage user roles (Admin and User) with role-based access control.
+- 🔧 Manage Customers (Create, Read, Update, Delete)
+- 🏍️ Manage Bikes linked to Customers
+- 📋 Track Service Records for each Bike
+- 🛠️ Assign Service Jobs to staff/mechanics
+- ✅ Mark Service Jobs as Completed
+- 🔐 Secure endpoints (Authentication & Authorization – if implemented)
 
-- Perform full CRUD operations for blogs and manage user authentication and authorization efficiently.
+---
 
-- Support advanced  functionalities like search, sorting, and filtering. payment system
+## 🛠️ Tech Stack
+
+- **Backend Framework**: Node.js / Express (or replace with Django/Flask/etc.)
+- **Database**: MongoDB / PostgreSQL / MySQL
+- **Authentication**: JWT / Session-based (if applicable)
+- **Other Tools**: dotenv, nodemon, etc.
+
+---
+
+## 🔗 API Endpoints Overview
+
+| Method | Endpoint                        | Description                         |
+|--------|----------------------------------|-------------------------------------|
+| GET    | `/api/customers`                | Get all customers                   |
+| POST   | `/api/customers`                | Create new customer                 |
+| PUT    | `/api/customers/:id`            | Update customer                     |
+| DELETE | `/api/customers/:id`            | Delete customer                     |
+| GET    | `/api/bikes`                    | Get all bikes                       |
+| POST   | `/api/bikes`                    | Register new bike                   |
+| PUT    | `/api/bikes/:id`                | Update bike info                    |
+| DELETE | `/api/bikes/:id`                | Remove bike                         |
+| GET    | `/api/services`                 | List all service records            |
+| POST   | `/api/services`                 | Create a new service record         |
+| PUT    | `/api/services/:id/assign`      | Assign a job to staff               |
+| PUT    | `/api/services/:id/complete`    | Mark job as completed               |
+
+---
+
+
