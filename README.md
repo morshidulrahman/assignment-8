@@ -1,7 +1,7 @@
 # 🚲 Bike Servicing Management Server
 
 # https://assignment-8-tau-tawny.vercel.app
- 
+
 #To Run Local
 
 ```bash
@@ -39,30 +39,26 @@ This is a RESTful backend API for managing bike servicing operations. It allows 
 
 ## 🛠️ Tech Stack
 
-- **Backend Framework**: Node.js / Express (or replace with Django/Flask/etc.)
-- **Database**: MongoDB / PostgreSQL / MySQL
-- **Authentication**: JWT / Session-based (if applicable)
-- **Other Tools**: dotenv, nodemon, etc.
+- **Backend Framework**: Node.js / Express / Prisma
+- **Database**: PostgreSQL
 
 ---
 
 ## 🔗 API Endpoints Overview
 
-| Method | Endpoint                        | Description                         |
-|--------|----------------------------------|-------------------------------------|
-| GET    | `/api/customers`                | Get all customers                   |
-| POST   | `/api/customers`                | Create new customer                 |
-| PUT    | `/api/customers/:id`            | Update customer                     |
-| DELETE | `/api/customers/:id`            | Delete customer                     |
-| GET    | `/api/bikes`                    | Get all bikes                       |
-| POST   | `/api/bikes`                    | Register new bike                   |
-| PUT    | `/api/bikes/:id`                | Update bike info                    |
-| DELETE | `/api/bikes/:id`                | Remove bike                         |
-| GET    | `/api/services`                 | List all service records            |
-| POST   | `/api/services`                 | Create a new service record         |
-| PUT    | `/api/services/:id/assign`      | Assign a job to staff               |
-| PUT    | `/api/services/:id/complete`    | Mark job as completed               |
+| Method | Endpoint                     | Description                 |
+| ------ | ---------------------------- | --------------------------- |
+| GET    | `/api/customers`             | Get all customers           |
+| POST   | `/api/customers`             | Create new customer         |
+| PUT    | `/api/customers/:id`         | Update customer             |
+| DELETE | `/api/customers/:id`         | Delete customer             |
+| GET    | `/api/bikes`                 | Get all bikes               |
+| POST   | `/api/bikes`                 | Register new bike           |
+| PUT    | `/api/bikes/:id`             | Update bike info            |
+| DELETE | `/api/bikes/:id`             | Remove bike                 |
+| GET    | `/api/services`              | List all service records    |
+| POST   | `/api/services`              | Create a new service record |
+| PUT    | `/api/services/:id/assign`   | Assign a job to staff       |
+| PUT    | `/api/services/:id/complete` | Mark job as completed       |
 
 ---
-
-
